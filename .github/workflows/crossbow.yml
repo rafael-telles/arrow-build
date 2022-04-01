@@ -145,7 +145,6 @@ jobs:
         run: |
           set -e
           pushd arrow/java
-          mvn versions:set -DnewVersion=8.0.0.dev1680
           popd
           arrow/ci/scripts/java_full_build.sh \
             $GITHUB_WORKSPACE/arrow \
